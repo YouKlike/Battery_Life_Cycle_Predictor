@@ -15,7 +15,7 @@ int adc_value = 0;
 int minute = 0;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // 初始化SD卡
   if (!SD.begin(SD_CS_PIN)) {
@@ -24,9 +24,9 @@ void setup() {
   }
 
   // 創建CSV檔案
-  dataFile = SD.open("data.text", FILE_WRITE);
+  dataFile = SD.open("data.csv", FILE_WRITE);
   if (dataFile) {
-    dataFile.println("Minute, Voltage");
+    dataFile.println("Time, Voltage");
     dataFile.close();
   } else {
     Serial.println("無法創建檔案");
@@ -39,7 +39,7 @@ void loop() {
   in_voltage = adc_voltage / (R2 / (R1 + R2));
 
   // 打開CSV檔案以寫入數據
-  dataFile = SD.open("data.text", FILE_WRITE);
+  dataFile = SD.open("data.csv", FILE_WRITE);
   if (dataFile) {
     // 寫入數據到CSV檔案
     dataFile.print(minute);
