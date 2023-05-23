@@ -175,7 +175,6 @@
         Serial.printf(" predicted voltaage");
         //float printval=result.classification[1].value;
         Serial.printf("%f",result.classification[0].value);
-
         float predictedCapacity= Linearinterpolation(result.classification[0].value,2.9,2.75,2500,2000);
         
         Serial.printf(" predicted capacity");

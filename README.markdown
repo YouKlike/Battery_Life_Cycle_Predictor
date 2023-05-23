@@ -50,6 +50,22 @@ pip install tensorflow
 ```
 
 
-### MATLAB模擬圖
+### MATLAB 模擬圖
 
-![](https://hackmd.io/_uploads/HyL2HLDrh.png)
+![](picture/matlab.png)
+
+### 模擬測試結果圖
+
+![](picture/result.png)
+
+### Presentation
+
+- [Canva](https://www.canva.com/design/DAFjgqJAeSY/Vs4lnVmENkptZnXJlBQboQ/edit?utm_content=DAFjgqJAeSY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+### reference
+- （Day 12）Edge Impulse 影像辨識實作：模型訓練與使用（Part 1）
+- Pixel:Bit 教學(五)－Edge Impulse 影像辨識實作 (上)：資料收集
+- 圖形化 TinyML：使用 Edge Impulse 網站訓練嵌入式 AI 模型，免寫半行程式在 Arduino Nano 33 BLE Sense 開發板實現語音辨識
+- Intro to TinyML Part 2: Deploying a TensorFlow Lite Model to Arduino | Digi-Key Electronics
+
+Copyright © YouKlike
